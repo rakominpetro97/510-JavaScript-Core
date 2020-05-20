@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello my friend</title>
 </head>
+
 <body>
+    <h1>Hi friends</h1>
+    <h1>How are you?</h1>
+    <h1>What are you doing now?</h1>
+
     <script>
-        alert("Petro");
-        alert("Rakomin");
-        let str = ("Hi how are you");
+        alert("Petro Rakomin");
+        let str = alert("Hi friends");
         console.log(str);
-        let data = ("I am ok and you");
-        console.log(data);
-        let isName = true;
-        isName = false;
-            
-        let x = 48;
-        let y = 12;
-        console.log(x/y)
-        
-        var age = 13
-        age = null
-        console.log(typeof age)
-        let makeItbetter = true;
-        console.log(typeof makeItbetter);
-        let underVariable;
-        console.log(typeof underVariable);
-        let nullVariable = null;
-        console.log(typeof nullVariable);
-        var
-        firstName="Petro";
-        lastName="Rakomin";
-        stydygrop="510 JavaScript Fundamentals";
-        age= 13
-        console.log(str)
-        let text = "Dear user your email is erickoenig@gmail.com and your password is ericking0807.";
-        console.log(typeof text);
-        const today = new Date(); 
-        20.5, 17
-    </script>                                                                                                             
+        let data = alert("How are you?");
+        console.log(str);
+        let note = alert("What are you doing now?");
+        note = data;
+        var nelli = 42;
+        window.alert(nelli)
+        let name = "Eric";
+        console.log(typeof name); // "string"
+        let income = 42;
+        console.log(typeof income);//"number"
+        let isActivated = true;
+        console.log(typeof isEnabled); //"boolean"
+        let undefVariable;
+        console.log(typeof undefVariable); //"underfined"
+        let age = 13;
+        age = null; // Value deletion
+        var confirm = ("How old you?");
+        console.log(+18)
+        var user = {
+            firstName: "Petro",
+            lastName: "Rakomin",
+            studygroup: "510 JavaScript Fundamentals",
+            birthday: 2006
+        };
+        let x = 13;
+        let y = 14;
+        let isWarm = true;
+        isWarm = false;
+        let Login = prompt("Your email")
+        alert (Login);
+        let Password = prompt("Your Password")
+        alert (Password);
+        var nelli = 60
+        var franz = 3600
+        var reinhard = 24
+        var hans = 30
+        window.alert(nelli*nelli);
+        window.alert((franz*reinhard)*hans)
+    </script>
+
 </body>
-</html> 
+
+</html>
