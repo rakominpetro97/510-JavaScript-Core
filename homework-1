@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello my friend</title>
+</head>
+<body>
+    <script>
+        alert("Petro");
+        alert("Rakomin");
+        let str = ("Hi how are you");
+        console.log(str);
+        let data = ("I am ok and you");
+        console.log(data);
+        let isName = true;
+        isName = false;
+            
+        let x = 48;
+        let y = 12;
+        console.log(x/y)
+        
+        var age = 13
+        age = null
+        console.log(typeof age)
+        let makeItbetter = true;
+        console.log(typeof makeItbetter);
+        let underVariable;
+        console.log(typeof underVariable);
+        let nullVariable = null;
+        console.log(typeof nullVariable);
+        var
+        firstName="Petro";
+        lastName="Rakomin";
+        stydygrop="510 JavaScript Fundamentals";
+        age= 13
+        console.log(str)
+        let text = "Dear user your email is erickoenig@gmail.com and your password is ericking0807.";
+        console.log(typeof text);
+        const today = new Date(); 
+        20.5, 17
+    </script>                                                                                                             
+</body>
+</html> 
