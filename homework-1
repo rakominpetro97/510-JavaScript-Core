@@ -8,47 +8,50 @@
 </head>
 
 <body>
-    <h1>Hi friends</h1>
-    <h1>How are you?</h1>
-    <h1>What are you doing now?</h1>
+    <h1>Hi friends</h1>   
+    <h1>How are you?</h1>  
+    <h1>What are you doing now?</h1>  
 
     <script>
-        alert("Petro Rakomin");
-        let str = alert("Hi friends");
+        alert("Petro"); // Task 1
+        alert("Rakomin"); //Task2
+        let str = alert("Hi friends"); // Task 3a
         console.log(str);
-        let data = alert("How are you?");
+        let data = alert("How are you?");  // Task 3b
         console.log(str);
-        let note = alert("What are you doing now?");
-        note = data;
+        let note = alert("What are you doing now?");   
+        note = data; // Task 3c
         var nelli = 42;
         window.alert(nelli)
-        let name = "Eric";
-        console.log(typeof name); // "string"
+        let name = "Eric"; 
+        console.log(typeof name); // "string"  // Task 4
         let income = 42;
-        console.log(typeof income);//"number"
+        console.log(typeof income);//"number" // Task 4
         let isActivated = true;
-        console.log(typeof isEnabled); //"boolean"
+        console.log(typeof isEnabled); //"boolean"      // Task 4
         let undefVariable;
-        console.log(typeof undefVariable); //"underfined"
+        console.log(typeof undefVariable); //"underfined"   // Task 4
         let age = 13;
         age = null; // Value deletion
-        var confirm = ("How old you?");
+        var confirm = ("How old are you?");
+        let old = prompt("How old are you?")
         console.log(+18)
+        alert (old)   // Task 5 
         var user = {
-            firstName: "Petro",
+            firstName: "Petro",// Task 6
             lastName: "Rakomin",
             studygroup: "510 JavaScript Fundamentals",
-            birthday: 2006
+            birthday: 2006     
         };
         let x = 13;
         let y = 14;
         let isWarm = true;
         isWarm = false;
-        let Login = prompt("Your email")
+        let Login = prompt("Your email") //Task 7
         alert (Login);
         let Password = prompt("Your Password")
         alert (Password);
-        var nelli = 60
+        var nelli = 60 // Task 8
         var franz = 3600
         var reinhard = 24
         var hans = 30
