@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = "1"         //Task 1a
+        let y = "2"
+        let res = x+y;
+        console.log(res);
+        console.log("1"+2)
+
+        let res2 ="x+y" 
+        console.log(11 >= 11) //Task 1b
+        console.log(res2)
+        console.log(typeof res2)
+
+        let x = "1"; // Task 1c
+        let bln = !!x;
+        console.log(bln);
+        console.log(typeof bln);
+
+
+        let x = "20"; // Task 1d
+        let = res4 = x;
+        console.log(res4);
+        console.log(typeof res4);
+    </script>
+</body>
+</html>
