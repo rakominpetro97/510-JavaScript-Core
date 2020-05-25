@@ -47,6 +47,46 @@ let Number = prompt("Number bigger than +7"); // Task 2
         } else {
          console.log("Oh no"); 
         }
+        
+        let number = 5*25; // Task 3e
+        switch (number) {
+            case 631:
+             console.log("To small"); // Task 3f
+             break;
+            case 125:
+             console.log("Exactly");
+            break;
+            case 225: 
+             console.log("Too large");
+             break;
+             default:
+                 console.log("I don't know such values")
+        }
+        
+       let cieties = ["Rome", "Lviv","Warsaw"]; //Task 4
+
+       let  = prompt("How old are you?")   // 5 Task
+       console.log(18)
+       console.log(10)
+       confirm(typeof "under 18")
+    
+       let = prompt("5cm");        // Task 6
+       let = prompt("6cm");
+       console.log("30");
+
+       let = prompt ("Gute Nacht") // Task 7
+       let = prompt("Gute Nacht")
+       console.log(typeof prompt);
+
+       let = prompt ("Guten Morgen")
+       let = prompt("Guten Morgen")
+       console.log(typeof prompt); 
+
+       let = prompt ("Guten Tag")
+       console.log(typeof prompt);
+
+       let = prompt ("Guten Abend ")
+       console.log(typeof prompt);
     </script>
 </body>
 </html>
