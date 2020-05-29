@@ -36,8 +36,23 @@
 
            // Task 4
            function raiseToDegree(a, b){
-               return (a,b);
+            var result = a ;
+
+
+            for(let i = 1; i < b; i++){
+            result = a ;
+            }
+            return result;
            }
+           var a = prompt("a?", '');
+           var b = prompt("b?", '');
+
+           if (b < 1) {
+               alert("Degree${b} not supported, please use natural number");
+           }else{
+               alert( raiseToDegree(a,b) );
+           }
+
            // Task 5
            function findMy(){
              var findMy;
@@ -72,4 +87,4 @@
 
   </script>
 </body>
-</html>#
+</html>
