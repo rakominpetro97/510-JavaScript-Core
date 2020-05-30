@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boy</title>
+</head>
+<body>
+    <script>
+        // Task 1 
+function calcRectangleArea(width, height){
+    if (isNaN(width) || isNaN(height)) {
+        throw "Parameter is not a number!";
+    }
+    return width * height;
+}
+try {
+    alert(calcRectangleArea(9,6));
+}
+catch(e){
+    console.log(e)
+}
+
+// Task 2
+let a = Number(prompt("Set your age")); 
+       if (a > 18);{
+      console.log("You are old enough");
+       }
+       console.log("You are too young");
+       
+// Task 4
+function showUsers(id){
+    showUsers ([7, 12, -44, 22])
+}
+try {
+    alert("Your ID isn't ok")
+} catch (id) {
+    alert("Your ID is ok")
+    console.log(alert);
+}
+
+    </script>
+
+</body>
+</html>
