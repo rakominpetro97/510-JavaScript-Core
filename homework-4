@@ -20,7 +20,6 @@ try {
 catch(e){
     console.log(e)
 }
-
 // Task 2
 function checkAge(){
     if (isNaN(a > 18) || isNaN(a < 18)) {
@@ -29,12 +28,11 @@ function checkAge(){
 }
 try {
     prompt("How old you?");
-    alert(checkAge(17));
+    alert(checkAge(19));
 }
 catch(error){
 console.log(error)
 }
-       
 // Task 4
 function showUsers(id){
     showUsers ([7, 12, -44, 22])
