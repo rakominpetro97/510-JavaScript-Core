@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1
+            let student = { 
+            age:"22",
+            firstname:"Tom",
+            lastname:"Hamilton"
+        };
+
+        //the Result must be 3
+    </script>
+</body>
+</html>
