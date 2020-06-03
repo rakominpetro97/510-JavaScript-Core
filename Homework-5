@@ -8,16 +8,16 @@
 <body>
     <script>
         // Task 1 
-        function propsCount(currentObject) {☺
+        function propsCount(currentObject) {
         let student = {
             age: "22",
             firstname: "Tom",
             lastname: "Hamilton"
         };
         }
-        
-		// Task 2
-		        function showProps(obj) {
+
+        //Task 2
+        function showProps(obj) {
             let football = {
                 players: "11 players",
                 bestplayer: "Cristiano Ronaldo",
@@ -26,6 +26,118 @@
                 refree: "3 refrees"
             };
         }
+
+        // Task 3
+        class Person{
+            constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        olexiowich(){
+            alert(this.fisrtname + "olexiowich" + this.lastname);
+        }
+        }
+        // Task 4/ 1 
+
+    function showSalary (fullName, dayRate, workingDays) {
+        class Worker{
+            constructor(fullName, dayRate, workingDays){
+            this.fullName = fullName;
+            this.dayRate = dayRate;
+            this.workingDays = workingDays;
+            }
+        work() {
+            alert(this.fullName + "work");
+            alert(this.dayRate + "work");
+            alert(this.workingDays + "work");
+        }
+        }
+    }
+    // Task 4/2 
+
+    class Gehalt {
+        constructor (check){
+            this.check = check;
+        }
+        euro () {
+            alert(this.check + "euro");
+        }
+    }
+
+    // Task 4/3
+
+    class Experience {
+        constructor(experience) {
+            this.experience = experience;
+        }
+        euro()
+        get experience() {
+            return this._experience;
+        }
+        set experience(value) {
+            if (value.length > 1.5) {
+                alert("Its too big");
+                return;
+            }
+            this._experience = value;
+        }
+    }
+    let number = new Number("1.5");
+    alert(number.experience);
+
+    // Task 4/4
+   class Newexperience extends Experience{
+     get() {
+         alert(this.experience + "get")
+     }
+     euro() {
+         alert(this.experience + "euro")
+     }
+     }
+   
+   
+   let newexperience = new Newexperience("150 € you ");
+   newexperience.get();
+   newexperience.euro();
+
+   // Task 4/5
+
+class User {
+constructor(name) {
+// call setter
+this.name = name;
+}
+get name() {
+return this._name;
+}
+set name(value) {
+if (value.length < 4) {
+alert("Name is too short");
+return;
+}
+this._name = value;
+}
+}
+let user = new User("Tomson");
+alert(user.name); // Garry call getter
+let user2 = new User("Lui"); // Name is too short
+user2.name = "Hubert"; // call setter
+
+// Task 5
+function goodJob() {
+class GeometricFigure{
+      constructor(Square, Circle){
+          this.square = square;
+          this.circle = circle;
+      }
+      square(){
+          alert(this.square + "radius is 32");
+      }
+      circle() {
+          alert(this.circle + "radius is 34");
+      }
+}
+}
     </script>
 </body>
 </html>
