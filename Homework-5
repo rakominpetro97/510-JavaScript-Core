@@ -7,25 +7,29 @@
 </head>
 <body>
     <script>
-        // Task 1 
+               // Task 1 
         function propsCount(currentObject) {
         let student = {
             age: "22",
             firstname: "Tom",
             lastname: "Hamilton"
         };
+        console.log(propsCount);
         }
+        propsCount.length;
 
         //Task 2
         function showProps(obj) {
             let football = {
-                players: "11 players",
+                playersyers: "11 players",
                 bestplayer: "Cristiano Ronaldo",
                 bestgoalkeeper: "Manuel Neuer",
                 coach: "Franko Foda",
                 refree: "3 refrees"
             };
+            console.log(showProps);
         }
+        showProps.length;
 
         // Task 3
         class Person{
