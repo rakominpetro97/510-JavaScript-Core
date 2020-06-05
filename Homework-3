@@ -1,108 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>Hi my friend</h1>
-
     <script>
         // Task 1
-        let arrNumber = [2, 3, 4, 5,];
-        let res = 1;
-
-        for (let finanze = 0; finanze < arrNumber.length; finanze++) {
-            res *= arrNumber[finanze];
-        }
-        let arrNumber = [2, 3, 4, 5,];
-        let res = 1;
-        let finanze = 0;
-        while (finanze < arrNumber.length) {
-            res *= arrNumber[finanze];
-            finanze++;
+        function propsCount(currentObject) {
+            let student = { 
+            age:"22",
+            firstname:"Tom",
+            lastname:"Hamilton"
+        };
         }
 
         // Task 2
-        for (var x=0; x<=15; x++) {
-        if (x === 0) {
-                console.log(x +  " is even");
-        }
-        else if (x % 2 === 0) {
-                console.log(x + " is even");   
-        }
-        else {
-                console.log(x + " is odd");
-        }
-}
-
-        // Task 3
-        for (var x=0; x<=15; x++) {
-        if (x === 0) {
-                console.log(x +  " is even");
-        }
-        else if (x % 2 === 0) {
-                console.log(x + " is even");   
-        }
-        else {
-                console.log(x + " is odd");
-        }
-}
-        // Task 4
-        function raiseToDegree(a, b) {
-            var result = a;
-
-
-            for (let i = 1; i < b; i++) {
-                result = a;
-            }
-            return result;
-        }
-        var a = prompt("a?", '');
-        var b = prompt("b?", '');
-
-        if (b < 1) {
-            alert("Degree${b} not supported, please use natural number");
-        } else {
-            alert(raiseToDegree(a, b));
-        }
-
-        // Task 5
-        function findMy() {
-            var findMy;
-            return findMy(24, 23, 14);
-            console.log(findMy);
-            alert(findMy);
-        }
-
-        // Task 6
-        function findUnique() {
-            return findUnique([1, 2, 3, 5, 3]);
-            findUnique([2, 3, 4, 6, 14]);
-            console.log(typeof findUnique)
-        }
-
-        // Task 7
-        function lastElement() {
-            let arr = [];
-            arr[0] = [arr.length - 1]
-            console.log(lastElem([3, 4, 10, -5]));
-            console.log(lastElem([3, 4, 10, -5], 2));
-            console.log(lastElem([3, 4, 10, -5], 8));
-        }
-
-        // Task 8 
-        let str = Inputstring = 'I love Java Script';
-        str = Outputstring = 'I Love Java Script'
-        let a;
-        for (a of str) {
-            document.write(a + "<br>");
-        }
-
     </script>
 </body>
-
 </html>
