@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">First</div>
+    <img src = "dog.jpg">
+    <script>
+        //Task 1
+        document.getElementById("test").innerHTML = "Last";
+
+        let d = document.body.children[0];
+        d.innerHML = "Last"
+
+        //Task 2
+
+    </script>
+</body>
+</html>
