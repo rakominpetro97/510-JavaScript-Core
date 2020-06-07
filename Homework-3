@@ -83,17 +83,20 @@ randArray(5);
         findMin(12, 14, 4, -4, 0.2);
 
         // Task 6
-        function findUnique(){
-            if (count == null) {
-                console.log(arr.slice(-1)[0])
+        function findUnique(arr) {
+            for (i = 0; i < arr.length; i++) {
+                let k = arr[i];
+                for (j = 0; j < arr.length; ++j) {
+                    if (i === j) {
+                        continue;
+                    } else if (k === arr[j]) {
+                        return false;
+                    }
+                }
             }
-            else{
-                console.log(arr.slice(-count))
-            }
+            return true;
         }
-        lastElem([3, 4, 10, -5]);
-        lastElem([3, 4, 10, -5], 2);
-        lastElem([3, 4, 10, -5], 8)
+        findUnique([1, 2, 3, 5, 3]);
 
         // Task 7
         function lastElement() {
