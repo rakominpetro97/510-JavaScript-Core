@@ -7,16 +7,43 @@
 </head>
 <body>
     <div id="test">First</div>
+
     <img src = "dog.jpg">
-    <script>
-        //Task 1
-        document.getElementById("test").innerHTML = "Last";
 
-        let d = document.body.children[0];
-        d.innerHML = "Last"
+    <div id = "myDiv">
+        <p> Erster Absatz  </p>
+        <p> Zweiter Absatz </p>
+        <p> Dritter Absatz </p>
+        <p> Vierter Absatz </p>
+    </div>
 
-        //Task 2
+    <ul id = "myList">
+        <li> Machen Sie </li>
+        <li> ich </li>
+        <li> horizontal! </li> 
+    </ul>
+    <span> Mach mich bitte unsichtbar! </span>
 
+    <input type = "text" id = "input1" value = "Text1">
+    <input type = "text" id = "input2" value = "Text2">
+
+    <main class = "n´mainClass check item">
+    <div id = "myDiv">
+     <p>Erster Absatz</p>
+    </div>
+    </main>
+    //Task 1
+    document.getElementById("test").innerHTML = "Last";
+
+    let d = document.body.children[0];
+    d.innerHML = "Last"
+    //Task 2
+        document.getElementsByClassName("boxer").innerHTML = "<img src = cat.jpg>";
+
+        //Task 5
+        //Task 6
+        prompt(type);
+        
     </script>
 </body>
 </html>
