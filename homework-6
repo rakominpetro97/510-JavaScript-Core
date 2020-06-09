@@ -8,7 +8,7 @@
 <body>
     <div id="test">First</div>
 
-    <img src = "dog.jpg">
+    <img src = "boxer.jpg">
 
     <div id = "myDiv">
         <p> Erster Absatz  </p>
