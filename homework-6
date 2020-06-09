@@ -6,9 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="test">First</div>
 
+//Task 1
+
+    <div id="test">First</div>
+//Task 2
     <img src = "boxer.jpg">
+
+//Task 3
 
     <div id = "myDiv">
         <p> Erster Absatz  </p>
@@ -17,15 +22,22 @@
         <p> Vierter Absatz </p>
     </div>
 
+//Task 4
+
     <ul id = "myList">
         <li> Machen Sie </li>
         <li> ich </li>
         <li> horizontal! </li> 
     </ul>
+    
+    //Task 5
+    
     <span> Mach mich bitte unsichtbar! </span>
 
     <input type = "text" id = "input1" value = "Text1">
     <input type = "text" id = "input2" value = "Text2">
+
+//Task 6
 
     <main class = "n´mainClass check item">
     <div id = "myDiv">
@@ -34,6 +46,8 @@
     </main>
     //Task 1
     document.getElementById("test").innerHTML = "Last";
+
+//Task 7
 
     let d = document.body.children[0];
     d.innerHML = "Last"
