@@ -21,29 +21,90 @@ catch(e){
     console.log(e)
 }
 // Task 2
-function checkAge(){
-    if (isNaN(a > 18) || isNaN(a < 18)) {
-        throw "Your not old enough!"
-    }
-}
-try {
-    prompt("How old you?");
-    alert(checkAge(19));
-}
-catch(error){
-console.log(error)
-}
-// Task 4
-function showUsers(id){
-    showUsers ([7, 12, -44, 22])
-}
-try {
-    alert("Your ID isn't ok")
-} catch (id) {
-    alert("Your ID is ok")
-    console.log(alert);
-}
+function calcRectangleArea(width, height) {
+            if (isNaN(width) || isNaN(height)) {
+                throw "Parameter is not a number!";
+            }
+            return width * height;
+        }
 
+        try {
+            alert(calcRectangleArea(3, "a"));
+        }
+        catch(e) {
+            console.log(e);
+        }
+
+// Task 3
+
+function checkAge(){
+            try{
+                var age = prompt("This movie has viewing restrictions of up to 14 years. Please enter your age before continuing:")
+                if (age.trim() == "") 
+                    throw new Error("The field is empty! Please enter your age")
+                else if (isNaN(parseInt(age)))
+                    throw new Error("Please enter number")              
+                else if (age < 14)
+                    throw new Error("Sorry, but you are too young for this movie")
+                alert("Enjoy the movie!");
+            }
+            catch(e){
+                alert(e.name+" "+e.message)
+            }
+        }
+        checkAge();
+
+// Task 4
+
+class MonthException {
+            constructor(message) {
+            this.message = message;
+            this.name = 'MonthException';
+            }
+        }
+
+        function showMonthName(month) {
+            month = month - 1; // Припасувати номер місяця до індексу масиву (1 = Січ, 12 = Груд)
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            if (months[month] !== undefined) {
+                return months[month];
+            } else {
+                throw new MonthException('Incorrect month number');
+            }
+        }
+
+        try {
+            // команди до виконання
+            var myMonth = 14; // 14 не входить у визначені межі й викликає виняток
+            var monthName = showMonthName(myMonth);
+            console.log(monthName);
+        } catch (e) {
+            monthName = 'unknown';
+            console.error(e.name, e.message); // передати об'єкт винятку до обробника помилок
+        }
+
+        //Task 5
+
+        function showUser(id) {
+            if (id < 0) {
+                throw new Error('ID must not be negative: '+id);
+            }
+            return { id: id }; 
+        }
+
+        function showUsers(ids) {
+            var result = [];
+            ids.forEach(function (id) {
+                try {
+                    var person = showUser(id);
+                    result.push(person);
+                } catch (exception) {
+                    console.log(exception.message);
+                }
+            });
+            return result;
+        }
+        showUsers([7, -12, 44, 22])
     </script>
 
 </body>
