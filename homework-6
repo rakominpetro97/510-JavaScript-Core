@@ -17,14 +17,12 @@
 
     <h2>Article header</h2>
     <div id = "text">
-        <p>First paragraph</p>
-        <p>Second paragraph</p>
+     firstElementChild:   <p>First paragraph</p>
+     <!--Comment-->
+     lastElementChild:   <p>Second paragraph</p>
         <p>Third paragraph</p>
     </div>
     <p>Another text</p>
-<p>"Selector text 0: First paragraph";</p>
- <p>"Selector text 1: Second paragraph";</p>
-  <p>"Selector text 2: Third paragraph";</p>
 
   //Task 4 
   <div id = "list">
@@ -79,11 +77,11 @@
 
         //Task 3
         function querySelectorAll(){
-            document.querySelectorAll("text")
-            text= "Selector text 0: First paragraph";
-            text= "Selector text 1: Second paragraph";
-            text= "Selector text 2: Third paragraph";
-            alert(text);
+            let pElem = document.getElementByIdTagName("p")[0];
+            let newP = Elem.cloneNode(true);
+            console.log(newP.innerHTML);
+            newP.innerHTML = "Selector text 0: First paragraph";
+            console.log(newP.innerHTML);
         }
 
         //Task 4
@@ -91,13 +89,13 @@
 
          //Task 5
          function changeCSS(){
-    document.getElementById("Second paragraph").style.color = "red";
+    document.getElsementById("Second paragraph").style.color = "red";
     document.getElementById("Third paragraph").style.underline = "black";
 }
 
 document.getElementById("button").addEventListener("click", changeCSS);
 
-//Task 6
+//Tsk 6
 prompt(type)
 
 //Task 7 
