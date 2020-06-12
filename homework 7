@@ -6,6 +6,10 @@
     <title>Hi</title>
 </head>
 <body>
+    //Task 6
+    <p>left=700,top=200") </p>
+
+
     <h1>I love eat</h1>
     
     <p>I love JavaScript</p>
@@ -23,11 +27,9 @@
     <p>left=700,top=200") </p>
 
     //Task 7
-    <button type="button" onclick="alert('Click!')" id="myBtn">Press me!</button>
+    <button type="button">Germany</button>
 
 
-
-    
 
     <script>
 
@@ -44,12 +46,12 @@
     location.reload(false);
 
     //Task 2
-    function changeCSS(change){            
-            console.log("Change type: " + change.type);              
-            console.log(change.target);
-        }
-        let btn = document.getElementById("change");
-        btn.addEventListener("click", changeHandler);
+    function changeCSS(change){            
+            console.log("Change type: " + change.type);              
+            console.log(change.target);
+        }
+        let btn = document.getElementById("change");
+        btn.addEventListener("click", changeHandler);
 
 function changeCSS(){
     document.getElementById("text").style.color ="orange";
@@ -84,9 +86,17 @@ document.getElementById("button").addEventListener("click", changeCSS);
 alert(p)
 
 //Task 7
-document.getElementById("myBtn").onclick = function() {
-      alert("Click!");
-   }
+if(navigator.geolocation){
+   navigator.geolocation.getCurrentPosition(function(pos){
+     alert( 'latitude: '+pos.coords.latitude+'  longitude: '+pos.coords.longitude+' altitude:'+pos.coords.altitude+' accuracy: '
+     +pos.coords.accuracy+' speed: '
+     +pos.coords.speed );
+   },function(e){alert(e);}, 
+   {enableHighAccuracy: true, timeout: 4000, maximumAge: 0 } );
+    } else alert(" Your browser does not support geolocation.");
+
+
+
 
     </script>
 
