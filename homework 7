@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+</head>
+<body>
+    <h1>I love eat</h1>
+    
+    <p>I love JavaScript</p>
+    
+    <button type="button" onclick="sendMessage()" id="myFkt">click me and the backround be blue</button>
+    
+    <button type="button" onclick="doubleClick()" id="doubleClick">make a double click and the backround be pink</button>
+    
+    <a href="https://www.youtube.com/watch?v=7jyy4OcX_FA&list=PLNmsVeXQZj7qOfMI2ZNk-LXUAiXKrwDIi&index=22">Click on me</a>
+
+    //Task 5
+    <button onclick="alert('I was pressed')">Press button</button>
+
+    //Task 6
+    <p>left=700,top=200") </p>
+
+    //Task 7
+    <button type="button" onclick="alert('Click!')" id="myBtn">Press me!</button>
+
+
+
+    
+
+    <script>
+
+        //Task 1/1
+    let openTab = window.open("https://www.w3schools.com", "w3schools", "width=300,height=300,left=700,top=200");
+
+    Task1/2
+    location.replace("width = 500", "height = 500");
+
+    Task1/3
+    location.replace("left = 200, top = 200");
+
+    //Task 1/4
+    location.reload(false);
+
+    //Task 2
+    function changeCSS(change){            
+            console.log("Change type: " + change.type);              
+            console.log(change.target);
+        }
+        let btn = document.getElementById("change");
+        btn.addEventListener("click", changeHandler);
+
+function changeCSS(){
+    document.getElementById("text").style.color ="orange";
+    document.getElementById("text").style.fontSize = "12px";
+    document.getElementById("text").style.fontFamily = "Comic Sans MS";
+}
+document.getElementById("button").addEventListener("click", changeCSS);
+      //Task 3/1 
+      function myFkt(){
+        document.body.style.backround = "blue";
+      }   
+
+     //Task 3/2
+    function doubleClick() {
+        document.button.style.backround ="pink";
+    }
+
+    //Task 3/3
+    function holdDown(){
+        document.button.style.backround = "brown";
+        
+    }
+
+    //Task 3/4
+    function onTheLink () {
+        document.a.style.backround = "yellow";
+    }
+
+    //Task 4
+
+//Task 6
+alert(p)
+
+//Task 7
+document.getElementById("myBtn").onclick = function() {
+      alert("Click!");
+   }
+
+    </script>
+
+</body>
+</html>
