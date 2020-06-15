@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=
+        
+        , initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <script>
+        //Task 1
+        function upperCase(b) {
+            let regExp = /^[A-Z]/;
+            if (!regExp.test(b)) {
+                consoel.log("String's not starts with uppercase")
+            } else{
+                console.log("String's starts with uppercase character")
+            }
+        }
+
+        upperCase("Regexp")
+
+        //Task 2
+            function checkEmail() {
+            let checkEmail = /1-4/;
+            if (!checkEmail.test()) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        }
+            checkEmail("rakominpetro23@gmail.com");
+        
+        //Task 3
+    let str = "cdbBdbsbz";
+	let re = /b-d/g;
+	let result = str.match(re);
+	console.log(result);
+
+//Task 4
+function inputOutput(){
+    let re = /html|css|java(script)?/gi;
+	let str = "Java first appeared, then HTML, then JavaScript";
+	console.log( str.match(re) );
+}
+
+//Task 5
+let str = "9999-9999-9999"; 
+console.log( str.match(/^/gm) );
+
+
+//Task 6 
+    function control(){
+    let control1 = /[A-Z]/m;
+    let control2 = /[0-9]/m;
+    let control3 = /[a-z]/m;
+}
+prompt("your email, please?");
+
+//Task7
+function checkLogin(){
+    let str = "bd11.22"
+    let checkLogin = /["bd11.22"]/;
+    }
+console.log( "bd11.22".match(/\d\.\d/) );
+
+    </script>
+</body>
+</html>
