@@ -22,41 +22,58 @@
         upperCase("Regexp")
 
         //Task 2
-            function checkEmail() {
-            let checkEmail = /1-4/;
-            if (!checkEmail.test()) {
-                console.log("true");
-            } else {
-                console.log("false");
+            function checkEmail(str) {
+                var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.-(2,3))+$/;
+                if(mailPattern.test(str))
+                {
+                    console.log("Email is correct");
+                }
+                else
+                {
+                    console.log("Email is not correct!");
+                    
+                }
             }
-        }
-            checkEmail("rakominpetro23@gmail.com");
+
+            checkEmail('my_mail@gmail.c_m');
+
         
         //Task 3
-    let str = "cdbBdbsbz";
-	let re = /b-d/g;
-	let result = str.match(re);
-	console.log(result);
+        let myRe = /d(b+)(d)/i;
+        let myArray = myRe.exec("csbBsbsbz");
+        console.log(myArray);
 
 //Task 4
-function inputOutput(){
-    let re = /html|css|java(script)?/gi;
-	let str = "Java first appeared, then HTML, then JavaScript";
-	console.log( str.match(re) );
-}
+let re = /(\w+)\s(\w+)/;
+let str = "Java Script";
+let newstr = str.replace(re, "$2, $1");
+console.log(newstr);
+
 
 //Task 5
-let str = "9999-9999-9999"; 
-console.log( str.match(/^/gm) );
+function checkBankCard(str) {
+    let regExp = /^\d{4}-\d{4}-\d{4}-\d{4}\b/;
+    let result = regExp.test(str);
+    if(result) {
+        console.log("Validation successful")
+    } else{
+        console,log("Please, try again. Incorrect data input!");
+    }
+}
+checkBankCard('9999-9999-9999');
 
 
 //Task 6 
-    function control(){
-    let control1 = /[A-Z]/m;
-    let control2 = /[0-9]/m;
-    let control3 = /[a-z]/m;
-}
-prompt("your email, please?");
+   function checkLogin(data){
+    let re =/^[a-zA-Z]{1}[a-zA-Z0-9\.]{1,9}$/;
+    let reqNumber = /[0-9\.]+/g;
+    let resultNumber = data.match(reqNumber);
+    let result = re.test(data);
+    console.log(`${data} is ${result} - ${resultNumber}`);
+   }
+   checkLogin('e1.88ret3');
+   checkLogin('ee1*1ret3');
+   checkLogin('1.1e1ret3');
 
 //Task7
 function checkLogin(){
