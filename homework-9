@@ -8,7 +8,7 @@
 <body>
 
     //Task 1
-    <id=a "Link" href="https://github.com">Link</a>    
+    <id= a "Link" href="https://github.com">Link</a>    
 
     //Task 2
     <h2 class = "head"> header1 </h2>
@@ -32,13 +32,15 @@
           
     <script>
         //Task 1 
-         $(Wa[href^="https://"]).attr("target","_blank");
-
+        $("a[href^='https://']").attr('target','_blank');
          //Task 2
-         document.body.children[0].style.backroundColor = "green";
+         $('h2.head').css('background','green').find('.inner').css('fontSize', '35px'
 
          //Task 3
-         $document.text([div^="text1"]).text("text2");
+         $('h3 + div').each(function() {
+             let $elem = $(this);
+             $elem.prev().before($elem)
+         })
 
          //Task 4
          $("li").each(function(i, el) {	
