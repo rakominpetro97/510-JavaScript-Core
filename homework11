@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+</head>
+<body>
+    //Task 1
+    <h1>Current user name: oivaniu </h1>
+    <h1>OS Type: Windows_NT</h1>
+    <h1>System work time:34116.43 minutes</h1>
+    <h1>Server file name: server.js</h1>
+
+    <script>       
+        //Task 2
+        let data = new Date(); 
+        let currentHour = data.getHours();
+        if (currentHour >=23 && currentHour <= 5) {
+            alert("Good night oivaniu!");
+        }
+        else if (currentHour > 5 && currentHour <= 11) {
+            alert("Good morning oivaniu!");
+        }
+        else if (currentHour > 11 && currentHour <= 17) {
+            alert("Good day oivaniu!");
+        }
+        else if (currentHour > 17 && currentHour < 23) {
+            alert("Good evening oivaniu");
+        }
+    </script>
+</body>
+</html>
