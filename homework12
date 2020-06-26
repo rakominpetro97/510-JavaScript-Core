@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+    //Task 1
+    <button id="change to next button">Vote</button>
+
+    <button>Your vote is accept on 26.06.2020</button>
+
+    //Task 2
+    <p> •	David Flanagan
+        •	Kyle Simpson
+        •	John Resig
+        •	Jeremy Keith
+    </p>
+  <script>
+      //Task 1
+      delete buttonId();
+      if(delete buttonId()) {
+          buttonId(delete id, from, first, button,);
+      } else {
+          buttonId ( dont, delete button);
+      }
+  </script>
+</body>
+</html>
