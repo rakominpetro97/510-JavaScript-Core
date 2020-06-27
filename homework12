@@ -7,22 +7,21 @@
     //Task 1
     <button id="change to next button">Vote</button>
 
-    <button>Your vote is accept on 26.06.2020</button>
-
-    //Task 2
-    <p> •	David Flanagan
-        •	Kyle Simpson
-        •	John Resig
-        •	Jeremy Keith
-    </p>
+    <button delete="id">Your vote is accept on 26.06.2020</button>
   <script>
       //Task 1
       delete buttonId();
       if(delete buttonId()) {
-          buttonId(delete id, from, first, button,);
-      } else {
-          buttonId ( dont, delete button);
+          buttonId(delete button);
       }
+
+      //Task 2
+ ajaxRequest.open("POST", "demo_post2.asp", true);
+ ajaxRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+ ajaxRequest.send("fname=Kyle & lname=Simpson");
+ ajaxRequest.send("fname=David & lname=Flanagan");
+ ajaxRequest.send("fname=John & lname=Resig");
+ ajaxRequest.send("fname=Jeremy & lname=Keith")
   </script>
 </body>
 </html>
