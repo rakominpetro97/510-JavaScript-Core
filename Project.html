@@ -21,8 +21,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#home">Старт<span class="sr-only"></span></a>
+                        <a class="nav-link " href="#home">Стартуєм Покупки<span class="sr-only"></span></a>
                     </li>
+                </div>
                 <div>
                     <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
                       <i class="fas fa-shopping-cart"></i>
@@ -31,7 +32,15 @@
                 </div>
             </div>
         </nav>
+        <script>
+            function meineFkt() {
+                document.getElementById("backround").style.color = "red";
+            }
+        </script>
     </header>
+
+
+
     <main class="container">
         <div class="jumbotron">
             
@@ -68,34 +77,34 @@
         </main>
 
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="hresna doroha1.jpg" alt="Хресна дорога">
+                  <img id="1" class="d-block w-100" src="hresna doroha1.jpg" alt="Хресна дорога">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="hresna doroha2.jpg" alt="Хресна дорога">
+                  <img id="2" class="d-block w-100" src="kerze2.jpg" alt="Свічка">
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha3.jpg" alt="Хресна дорога">
+                    <img id="3" class="d-block w-100" src="monumen4.jpg" alt="Монумент">
                   </div>
 
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha4.jpg" alt="Хресна дорога">
+                    <img id="4" class="d-block w-100" src="ornament4.jpg" alt="Орнаменти">
                   </div>
 
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha5.jpg" alt="Хресна дорога">
+                    <img id="5" class="d-block w-100" src="porträt5.jpg" alt="Портрет">
                   </div>
 
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha6.jpg" alt="Хресна дорога">
+                    <img id="7" class="d-block w-100" src="risba6.jpg" alt="Різба">
                   </div>
 
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha7.jpg" alt="Хресна дорога">
+                    <img id="7" class="d-block w-100" src="rose7.jpg" alt="Роза">
                   </div>
 
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="hresna doroha8.jpg" alt="Хресна дорога">
+                    <img class="d-block w-100" src="schrift8.jpg" alt="Сшрифт">
                   </div>
                 <!-- Todo: Dynamically add items here --> 
               </div>
@@ -129,8 +138,8 @@
               <p class="card-text"></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary buy" data-id="id">Buy</button>
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
+            <button class="btn btn-primary buy" data-id="id">Купити</button>
           </div>
         </div>
       </div>
@@ -152,11 +161,11 @@
             <div class="container">
               <form class="form-contacts">
                 <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <label for="client-name" class="col-4 col-form-label">Ваще ім'я</label>
                   <input class="form-control col-8" type="text" id="client-name" required>
                 </div>
                 <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label"></label>
+                  <label for="client-email" class="col-4 col-form-label">Ващ електрона пошта</label>
                   <input class="form-control col-8" type="email" id="client-email" required>
                 </div>
               </form>
@@ -164,7 +173,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
-            <button class="btn btn-primary order">Order</button>
+            <button class="btn btn-primary order">Замовети</button>
           </div>
         </div>
       </div>
@@ -181,5 +190,18 @@
     <script defer src="js/cart.js"></script>
     <script defer src="js/product-list.js"></script>    
     <script defer src="js/index.js"></script>
+    <script>
+        function zeichnen() {
+  var element = document.getElementById("canvas");
+  var ctx = element.getContext("2d");
+  var grad = ctx.createLinearGradient(0, 0, 300, 0);
+  grad.addColorStop(0, "black");
+  grad.addColorStop(0.5, "red");
+  grad.addColorStop(1, "white");
+  ctx.fillStyle = grad;
+  ctx.fillRect( 10, 10, 130, 70);
+  ctx.fillRect(160, 10, 130, 70);
+}
+    </script>
 </body>
 </html>
