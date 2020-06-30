@@ -108,13 +108,6 @@
                   </div>
                 <!-- Todo: Dynamically add items here --> 
               </div>
-    <script>
-        function farbered() {
-    document.bgColor = "#E3DABB";
-    document.getElementsByTagName("body")[0].style.backgroundColor = document.bgColor;
-    document.form1.bgfarbe.value = document.bgColor;
-    }
-    </script>
     
     <footer class="container">
       <h2 id="contacts">Контакти</h2>
@@ -186,16 +179,6 @@
 
 
 
-    <script>
-        function backgroundColor() {
-  var element = document.getElementById("red color");
-  var ctx = element.getContext("2d");
-  var grad = ctx.createLinearGradient(0, 0, 300, 0);
-  grad.color("red");
-  ctx.fillStyle = grad;
-}
-document.getElementById("headline").style.body="red"
-console.log(document);
 
     <script async src ="js/alert-window.js"></script>
     <script defer src="js/products-service.js"></script>
