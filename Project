@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +8,13 @@
     <title>Граніт Лео</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
+
+
+
     <header class="container" id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Граніт Лео</a>
@@ -21,9 +24,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#home">Стартуєм Покупки<span class="sr-only"></span></a>
+                        <a class="nav-link " href="#home">Старт<span class="sr-only">(current)</span></a>
                     </li>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#products">Продукти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contacts">Контакти</a>
+                    </li>
+                </ul>
                 <div>
                     <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
                       <i class="fas fa-shopping-cart"></i>
@@ -32,15 +41,7 @@
                 </div>
             </div>
         </nav>
-        <script>
-            function meineFkt() {
-                document.getElementById("backround").style.color = "red";
-            }
-        </script>
     </header>
-
-
-
     <main class="container">
         <div class="jumbotron">
             
@@ -48,70 +49,157 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="intro mx-auto">
-                    <h1 class="display-4">Вітання до Граніту Лео</h1>
-                    <p class="lead"></p>
-                    <hr class="my-4">
+                    <h1 class="display-4">Привітстуєм вас ви Граніт Лео</h1>                   
+                     <hr class="my-4">
                     <p class="lead">
-                      <a class="btn btn-primary btn-lg " href="#products" role="button">Start shopping</a>
+                      <a class="btn btn-primary btn-lg " href="#products" role="button">Стартуєм Покупи</a>
                     </p>
                   </div>    
                 </div>
-
-                <a class="carousel-control-prev" href="#carouselOffers" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselOffers" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="hresna doroha1.jpg" alt="Хресна дорога" width="265" height="135">
                 </div>
-            </div>
-            </div>
-            <section>
-                <h2 id="products">Продукти</h2>
-                <div class="row products-container">
-                   <!--Products are dynamically generated here-->
+                <head>
+                  <style>
+                    .card {
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                      max-width: 300px;
+                      margin: auto;
+                      text-align: center;
+                      font-family: arial;
+                    }
+                    
+                    .price {
+                      color: grey;
+                      font-size: 22px;
+                    }
+                    
+                    .card button {
+                      border: none;
+                      outline: 0;
+                      padding: 12px;
+                      color: white;
+                      background-color: #000;
+                      text-align: center;
+                      cursor: pointer;
+                      width: 100%;
+                      font-size: 18px;
+                    }
+                    
+                    .card button:hover {
+                      opacity: 0.7;
+                    }
+                    </style>
+              </head>
+               <h2 style="text-align:center">Product Card</h2>
+              
+                <div class="card">
+                  <img src="hresna doroha2.jpg" alt="Хресна дорога" style="width:100%">
+                  <h1>Хресна дорога</h1>
+                  <p class="price">$99.99</p>
+                  <p><button>Add to Cart</button></p>
                 </div>
-            </section>
-        </main>
 
                 <div class="carousel-item">
-                  <img id="1" class="d-block w-100" src="hresna doroha1.jpg" alt="Хресна дорога">
+                  <img class="d-block w-100" src="kerze2.jpg" alt="Свішка" width="265" height="135">
                 </div>
-                <div class="carousel-item">
-                  <img id="2" class="d-block w-100" src="kerze2.jpg" alt="Свічка">
+                <head>
+                  <style>
+                    .card {
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                      max-width: 300px;
+                      margin: auto;
+                      text-align: center;
+                      font-family: arial;
+                    }
+                    
+                    .price {
+                      color: grey;
+                      font-size: 22px;
+                    }
+                    
+                    .card button {
+                      border: none;
+                      outline: 0;
+                      padding: 12px;
+                      color: white;
+                      background-color: #000;
+                      text-align: center;
+                      cursor: pointer;
+                      width: 100%;
+                      font-size: 18px;
+                    }
+                    
+                    .card button:hover {
+                      opacity: 0.7;
+                    }
+                    </style>
+              </head>
+               <h2 style="text-align:center">Product Card</h2>
+              
+                <div class="card">
+                  <img src="kerze2.jpg" alt="Свішка" style="width:100%">
+                  <h1>Свішка</h1>
+                  <p class="price">$9.99</p>
+                  <p><button>Add to Cart</button></p>
                 </div>
 
                 <div class="carousel-item">
-                    <img id="3" class="d-block w-100" src="monumen4.jpg" alt="Монумент">
+                  <img class="d-block w-100" src="grabstein3jpg" alt="" width="265" height="135">
                   </div>
-
                   <div class="carousel-item">
-                    <img id="4" class="d-block w-100" src="ornament4.jpg" alt="Орнаменти">
-                  </div>
+                    <img class="d-block w-100" src="schrift2.jpg" alt="Свішка" width="265" height="135">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="monument2.jpg" alt="Свішка" width="265" height="135">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="ornament2.jpg" alt="Свішка" width="265" height="135">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="porträt2.jpg" alt="Свішка" width="265" height="135">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="risba2.jpg" alt="Свішка" width="265" height="135">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="rose2.jpg" alt="Свішка" width="265" height="135">
+                              </div>
 
-                  <div class="carousel-item">
-                    <img id="5" class="d-block w-100" src="porträt5.jpg" alt="Портрет">
-                  </div>
+                              <script> 
+                                image.style.width = '50%'
+                                image.style.height = 'auto'
+                                </script>
 
-                  <div class="carousel-item">
-                    <img id="7" class="d-block w-100" src="risba6.jpg" alt="Різба">
-                  </div>
-
-                  <div class="carousel-item">
-                    <img id="7" class="d-block w-100" src="rose7.jpg" alt="Роза">
-                  </div>
-
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="schrift8.jpg" alt="Сшрифт">
-                  </div>
                 <!-- Todo: Dynamically add items here --> 
               </div>
+              <a class="carousel-control-prev" href="#carouselOffers" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselOffers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Далше</span>
+              </a>
+            </div>
+        </div>
+
+        </div>
+        <section>
+            <h2 id="products">Продукти</h2>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.body.style.backgroundColor = "red";
+    </script>
     
     <footer class="container">
-      <h2 id="contacts">Контакти</h2>
-      <p> <a href="rakominpetro97@gmail.com">Леонід Ракомін</a></p>
+      <h2 id="contacts">Контактуєте нас</h2>
+      <p> <a href="https://rakominpetro97@gmail.com">Леонід Ракомін</a></p>
     </footer>
     
 
@@ -131,14 +219,14 @@
               <p class="card-text"></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
-            <button class="btn btn-primary buy" data-id="id">Купити</button>
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
           </div>
         </div>
       </div>
     </div>
     
-    <!-- Modal Cart -->+
+    <!-- Modal Cart -->
     <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -154,19 +242,19 @@
             <div class="container">
               <form class="form-contacts">
                 <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Ваще ім'я</label>
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
                   <input class="form-control col-8" type="text" id="client-name" required>
                 </div>
                 <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label">Ващ електрона пошта</label>
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
                   <input class="form-control col-8" type="email" id="client-email" required>
                 </div>
               </form>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Закрити</button>
-            <button class="btn btn-primary order">Замовети</button>
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
           </div>
         </div>
       </div>
@@ -178,13 +266,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
-
-
-    <script async src ="js/alert-window.js"></script>
+    <script async src="js/alert-window.js"></script>
     <script defer src="js/products-service.js"></script>
     <script defer src="js/cart.js"></script>
     <script defer src="js/product-list.js"></script>    
     <script defer src="js/index.js"></script>
-    </script>
 </body>
+
 </html>
