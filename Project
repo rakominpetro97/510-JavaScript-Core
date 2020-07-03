@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Граніт Лео</title>
+    <title><h1>Граніт Лео</h1></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"ahref="css/index.css">
+    <title><h1>Граніт Лео</h1></title>
 
 </head>
 
@@ -39,6 +40,17 @@
             </div>
         </nav>
     </header>
+
+    <main class="corousel"></main>
+    <div class="">
+    
+    </div>
+
+    <script>
+      function carousel(){
+      }
+
+    </script>
     <main class="container">
         <div class="jumbotron">
             
@@ -46,7 +58,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="intro mx-auto">
-                    <h1 class="display-4">Привітстуєм вас ви Граніт Лео</h1>                   
+                    <h1 class="display-4">Виготовлення і встановлення пам'ятників з граніту у Львові</h1>                   
                      <hr class="my-4">
                     <p class="lead">
                       <a class="btn btn-primary btn-lg " href="#products" role="button">Стартуєм Покупи</a>
