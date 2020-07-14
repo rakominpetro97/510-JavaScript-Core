@@ -6,99 +6,86 @@
     <title>Document</title>
 </head>
 <body>
+<script>
 
-    //Task 1
-    <div id = "test">First</div>
+    // ******************************* Task 1 *******************************
 
-    //Task 2
-    <img class="image" src="dog.jpg">
+    // document.getElementById("test").innerHTML = "Last";
+    // document.querySelector("#test").innerHTML = "Last2";
 
-    //Task 3
 
-    <h2>Article header</h2>
-    <div id = "text">
-     firstElementChild:   <p>First paragraph</p>
-     <!--Comment-->
-     lastElementChild:   <p>Second paragraph</p>
-        <p>Third paragraph</p>
-    </div>
-    <p>Another text</p>
+    // ******************************* Task 2 *******************************
 
-  //Task 4 
-  <div id = "list">
-      <p>•	1</p>
-      <p>•	5</p>
-      <p>•	2</p>
-      <p>•	4</p>
-      <p>•	3</p>
- </div>
- 
- //Task 5
+    // let elem = document.getElementsByClassName("image")[0];
+    // elem.src = "cat.jpg";        
+    // alert(elem.outerHTML);
 
- <h1>I am a big header!!!</h1>
- <div id="myDiv">
-     <p><b>First paragraph</b></p>
-     <p>Second paragraph</p>
-     <p>Third paragraph</p>
-     <p>Fourth paragraph</p>
- </div>
- <ul id="myList">
-     <li>Make</li>
-     <li>me</li>
-     <li>horizontal!</li>
- </ul>
- <span>Make me invisible, please!</span>
 
- //Task 6
- <body>
-    <input type="text" id="input1" value="Text1">
-    <input type="text" id="input2" value="Text2">
+    // ******************************* Task 3 *******************************
 
-    //Task 7
-    <main class="mainClass check item"> 	
-        <div id="myDiv">
-   <p>First paragraph</p>           
- </div>
-</main> 
+    // var elems = document.querySelectorAll("#text p");
 
-</body>
-    <script>
-        //Task 1
-        document.getElementById("test").innerHTML = "Last";
+    // for (var i = 0; i < elems.length; i++) {
+    //     alert("Selector text " + i + ": " + elems[i].innerHTML);
+    // } 
 
-        let d = document.body.children[0];
-        d.innerHTML = "Last"
 
-        //Task 2
+    // ******************************* Task 4 *******************************  
 
-        let elem = document.getElementsByClassName("image")[0];
-        elem.src = "cat.jpg";        
-        alert(elem.outerHTML);
+    // var parentEl = document.getElementById("list");
+    // var firstEl = parentEl.childNodes[0].innerHTML;
+    // var lastEl = parentEl.childNodes[4].innerHTML;
+    // var secondtEl = parentEl.childNodes[1].innerHTML;
+    // var fourthEl = parentEl.childNodes[3].innerHTML;
+    // var thirdtEl = parentEl.childNodes[2].innerHTML;
 
-        //Task 3
-        function querySelectorAll(){
-            var elems = document.querySelectorAll("#text p");
-        
-        for (var i = 0; i < elems.length; i++) {
-            alert("Selector text " + i + ": " + elems[i].innerHTML);
-        }
+    // var firstEl = document.getElementById("list").firstChild.innerHTML;
+    // var lastEl = document.getElementById("list").lastChild.innerHTML;
+    // var secondtEl = document.getElementById("list").firstChild.nextSibling.innerHTML;
+    // var fourthEl = document.getElementById("list").lastChild.previousSibling.innerHTML;
+    // var thirdtEl = document.getElementById("list").firstChild.nextSibling.nextSibling.innerHTML;
 
-        //Task 4
-         alert(list)
+    // alert(firstEl);
+    // alert(lastEl);
+    // alert(secondtEl);
+    // alert(fourthEl);
+    // alert(thirdtEl);
 
-         //Task 5
-         function changeCSS(){
-    document.getElsementById("Second paragraph").style.color = "red";
-    document.getElementById("Third paragraph").style.underline = "black";
-}
+    // ******************************* Task 5 *******************************
 
-document.getElementById("button").addEventListener("click", changeCSS);
+    // document.body.children[0].style.backgroundColor = "lightgreen";
+    // document.getElementById("myDiv").children[0].style.fontWeight = "700";
+    // document.getElementById("myDiv").children[1].style.color = "red";
+    // document.getElementById("myDiv").children[2].style.textDecoration = "underline";
+    // document.getElementById("myDiv").children[3].style.fontStyle = "italic";
+    // document.getElementById("myList").style.listStyle = "none";
+    // document.getElementById("myList").style.display = "flex";
+    // document.getElementsByTagName("span")[0].style.display = "none";
 
-//Tsk 6
-prompt(type)
 
-//Task 7 
-alert(id)
-    </script>
+    // ******************************* Task 6 *******************************
+
+    // var data1 = prompt("Enter your first message", "");        
+    // var data2 = prompt("Enter your second message", "");
+    // var inp1 = document.getElementById("input1");
+    // var inp2 = document.getElementById("input2");
+    // inp1.value = data1;
+    // inp2.value = data2;
+
+    // var input1Value = inp1.value;
+    // var input2Value = inp2.value;
+    // inp1.value = input2Value;
+    // inp2.value = input1Value;
+
+    // ******************************* Task 7 *******************************
+    const x = 100;
+    document.body.innerHTML =
+        `<main class="mainClass check item">
+          <div id="myDiv">${x}
+              <p>First paragraph</p>           
+          </div>
+         </main>`;
+
+</script>
 </body>
 </html>
